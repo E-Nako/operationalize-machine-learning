@@ -11,7 +11,8 @@ COPY model_data /app/model_data
 
 ## Step 3:
 # Install packages from requirements.txt
-RUN pip install --upgrade pip && pip install --trusted-host pypi.python.org -r requirements.txt
+RUN pip install --upgrade pip &&\ 
+    pip install --trusted-host pypi.python.org -r requirements.txt
 # hadolint ignore=DL3013
 
 
